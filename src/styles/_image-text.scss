@@ -1,0 +1,24 @@
+@use 'variaveis';
+
+.image-text {
+    &__container {
+        display: flex;
+        padding: 5.6vw;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            img {
+                width: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: variaveis.$corTextoSecundario;
+    }
+}
